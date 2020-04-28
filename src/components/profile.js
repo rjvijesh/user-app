@@ -4,7 +4,6 @@ import history from '../components/prevHistory';
 
 class Profile extends Component {
     constructor(props) {
-        console.log("constructor called");
         super(props)
         this.state = {
             firstname: '',
@@ -30,7 +29,6 @@ class Profile extends Component {
         }
     }
     componentDidMount() {
-        console.log("profile page componentDidMount called");
         if (localStorage.getItem('userDetails')) {
             var encodedUserDetails = localStorage.getItem('userDetails');
             var decodedUserDetails = atob(encodedUserDetails);
@@ -46,7 +44,6 @@ class Profile extends Component {
     }
 
     render() {
-        console.log("render called");
         return (
             <React.Fragment>
                 <h1>User Details</h1>
