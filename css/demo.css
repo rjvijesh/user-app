@@ -1,0 +1,81 @@
+body {font-family: Arial, Helvetica, sans-serif;width:800px;height:500px;margin:0 auto;padding:0;margin-top: 20px;background-color : #d3d3d3;}
+#app{text-align: center;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .container {
+    padding: 16px;
+  }
+
+  .signupbtn {
+    float: left;
+    width: 50%;
+    background-color: rgb(216, 136, 98);
+    color: grey;
+    padding: 14px 20px;
+    margin: 8px 12px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    opacity: 0.9;
+  }
+  .signupactive, .signupbtn:hover {
+    background-color: rgb(165, 84, 52); /* Green */
+    color: white;
+  }
+  .loginbtn {
+    float: left;
+    width: 50%;
+    background-color: rgb(216, 170, 72);
+    color: grey;
+    padding: 14px 20px;
+    margin: 8px 12px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    opacity: 0.9;
+  }
+  .loginactive, .loginbtn:hover  {
+    background-color: rgb(189, 130, 42); /* Green */
+    color: white;
+  }
+  
+  .logoutbtn{
+    background-color: rgb(86, 152, 228);
+  }
+
+  table{border: 3px solid #f1f1f1;width:800px;height:auto;margin:0 auto;margin-top: 20px;background-color : #c9c4c4;}
+
+  #details td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  #details tr:nth-child{background-color: #eaebdf;}
+
+#details tr:hover {background-color: #ddd;}
+  
+
