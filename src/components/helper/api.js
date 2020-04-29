@@ -47,6 +47,9 @@ export function getapidata(apiUrl, userDetails) {
         .then(response => {
             if (response != undefined && response != '') {
                 if (response.data && response.data.status !== undefined && response.data.status === 101) {
+                    if (localStorage.getItem('userDetails')) {
+                        localStorage.removeItem('userDetails');
+                    }
                     alert("authorization failed");
                     history.push("/login");
                 }
