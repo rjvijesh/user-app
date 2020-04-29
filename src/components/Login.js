@@ -85,7 +85,6 @@ class Signup extends Component {
             userDetails['username'] = username;
             userDetails['password'] = password;
             userDetails['confirmpassword'] = confirmpassword;
-            console.log("userDetails", userDetails);
             userservice.register(userDetails)
                 .then(result => {
                     if (result !== undefined && result.data !== undefined && result.data.status !== undefined && result.data.status === 1) {
@@ -110,7 +109,7 @@ class Signup extends Component {
                         <input type="text" id="username" placeholder="Username" />
                         <input type="password" id="password" placeholder="Password" />
                         <input type="password" id="confirmpassword" placeholder="Confirm Password" />
-                        <button id="send">Send</button>
+                        <button id="send">Register</button>
                     </div>
                 </form>
             </div>
@@ -156,7 +155,7 @@ class Login extends Component {
                     <div id="login" class="container">
                         <input type="text" id="uname" placeholder="Username" />
                         <input type="password" id="password" placeholder="Password" />
-                        <button id="send">Send</button>
+                        <button id="send">Login</button>
                     </div>
                 </form>
             </div>
